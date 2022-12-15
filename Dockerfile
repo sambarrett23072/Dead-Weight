@@ -1,5 +1,5 @@
 # Dockerfile, Image, Container 
-FROM python:latest 
+FROM python:3.11.0-slim
 
 ADD . /app
 
