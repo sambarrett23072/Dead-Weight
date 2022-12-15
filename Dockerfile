@@ -1,8 +1,8 @@
 # Dockerfile, Image, Container 
 FROM python:latest 
 
-ADD main.py .
+ADD . /app
 
-RUN pip install discord responses
+RUN pip install discord responses python-dotenv
 
-CMD [ "python", "./main.py"]
+CMD [ "python", "./app/main.py"]
