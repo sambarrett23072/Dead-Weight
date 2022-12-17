@@ -48,8 +48,9 @@ def run_discord_bot():
 
     @client.event
     async def on_voice_state_update(member, before, after):
-        if before.channel and not after.channel and member.id == 200717441507000321:
+        if before.channel and not after.channel and member.id == 1053795318875041933:
             print(f'{member} has left the vc')
+            await send_message(message, user_message, is_private=True)
 
     # Remember to run your bot with your personal TOKEN
     client.run(TOKEN)
