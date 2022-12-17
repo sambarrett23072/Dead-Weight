@@ -8,8 +8,8 @@ This bot has one very simple function, it will post the "now we've got rid of th
 1. Ensure you have docker installed on the host machine 
 2. Pull the repo ```git clone https://github.com/sambarrett23072/Dead-Weight``` Note: it will create it's own directory called Dead-Weight
 3. Create a .env file, and insert the following ```DISCORD_TOKEN={TOKEN}```
-4. Build the docker container with the command ```docker build -t dead-weight .```
-5. Run the docker container with the command ```docker run dead-weight```
+4. Build the docker container with the command ```docker build -t dead-weight .``` Note: may require sudo
+5. Run the docker container with the command ```docker run -d dead-weight``` Note: may require sudo
 
 Feauture Roadmap 
 https://github.com/sambarrett23072/Dead-Weight/milestones
