@@ -30,6 +30,8 @@ def run_discord_bot():
     async def on_voice_state_update(member, before, after):
         if before.channel and not after.channel:
             print(f'{member} has left the vc')
+            await send_message(user_message="953272075555074142",is_private=False,message="test")
+
             
     # Remember to run your bot with your personal TOKEN
     client.run(TOKEN)
